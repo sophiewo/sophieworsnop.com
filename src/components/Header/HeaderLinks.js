@@ -26,18 +26,34 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="architecture"
+          title="Architectural Portfolio"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="/architectural-portfolio"
+            color="transparent"
+            className={classes.navLink}> Architecture
+          </Button>
+        </Tooltip>
+      </ListItem>
+
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="SophieKnits_"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
+            <Link to="/components" className={classes.dropdownLink}>
+              Components
             </Link>,
             <a
               href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
@@ -45,10 +61,18 @@ export default function HeaderLinks(props) {
               className={classes.dropdownLink}
             >
               Documentation
-            </a>
+            </a>,
+             <Link to="/gallery" className={classes.dropdownLink}>
+              Gallery
+            </Link>,
+            <Link to="/knitting-tools" className={classes.dropdownLink}>
+              Knitting Tools
+            </Link>
           ]}
-        />
+          />
+           
       </ListItem>
+
       <ListItem className={classes.listItem}>
         {/* <Button
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
