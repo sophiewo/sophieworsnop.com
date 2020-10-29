@@ -18,7 +18,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
+import WorkSection from "./Sections/WorkSection"
 
 const dashboardRoutes = [];
 
@@ -45,19 +45,21 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>SophieKnits_  </h1>
+              <h1 className={classes.title}>Hi, I'm Sophie. </h1>
               <h2>
-                An architectural designer turned full-stack developer. When Im not coding you will find me knitting.
+                An architectural designer turned full-stack developer. I have a passion for sustainable design, whether it be a building or a piece of tech.
               </h2>
-              <br />
+              <br/>
+              <h3> See behind the scenes of this React Website </h3>
               <Button
-                color="primary"
+                color="primary" round
                 size="lg"
                 href="https://www.github.com/sophiewo"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                See behind the scenes on github
+              > 
+              <i className={classes.socialIcons + " fab fa-github"} />
+                 github
               </Button>
             </GridItem>
           </GridContainer>
@@ -66,6 +68,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <h3>paralax</h3>
+          <WorkSection/>
         </div>
       </div>
       <Footer />
