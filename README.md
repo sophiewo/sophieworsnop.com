@@ -7,7 +7,7 @@ This website was built toshowcase what I'm all about as a full stack software / 
 
 # Tech 
 
-This project is built using React via the create-react-app.
+This project is built using React via the `create-react-app`. bundled with `npm`
 
 ## Current features:
 - Landing Page with links to social platforms
@@ -15,8 +15,8 @@ This project is built using React via the create-react-app.
 - Some examples of previous work
 
 ### Next features to add:
-
-
+- knitting decrease calculator
+- knitting pattern designer
 
 ## Licensing
 
