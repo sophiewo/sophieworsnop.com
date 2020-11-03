@@ -7,7 +7,7 @@ This website was built toshowcase what I'm all about as a full stack software / 
 
 # Tech 
 
-This project is built using React via the `create-react-app`. bundled with `npm`
+This project is built using React via the `create-react-app`, bundled with `npm` and deployed through netflify and `npm build`
 
 ## Current features:
 - Landing Page with links to social platforms
