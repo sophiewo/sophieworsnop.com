@@ -3,7 +3,11 @@
 
 Visit the deployed website [here](https://sophieworsnop.netlify.app/)
 
-This website was built toshowcase what I'm all about as a full stack software / web developer and host my work from the last 10years as an architectural designer.
+This website was built to showcase what I'm all about as a full stack software / web developer and host my work from the last 10 years as an architectural designer.
+
+I am also an avid knitter so I will be building features to aid with knitting pattern design.
+
+I decided to use components of a Material-UI template from Creative Tim to get started with the front-end.
 
 # Tech 
 
