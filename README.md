@@ -1,9 +1,22 @@
 
 # sophieworsnop.com
 
-A place to showcase what I'm all about as a full stack software / web developer
+Visit the deployed website [here](https://sophieworsnop.netlify.app/)
 
-This project is built using React Native via the create-react-app
+This website was built toshowcase what I'm all about as a full stack software / web developer and host my work from the last 10years as an architectural designer.
+
+# Tech 
+
+This project is built using React via the create-react-app.
+
+## Current features:
+- Landing Page with links to social platforms
+- Website structure diagrams
+- Some examples of previous work
+
+### Next features to add:
+
+
 
 ## Licensing
 
