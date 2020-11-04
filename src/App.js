@@ -7,6 +7,7 @@ import { createBrowserHistory } from "history";
 import LandingPage from "views/LandingPage/LandingPage.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import ArchitecturePortfolio from "views/ArchitecturePortfolio/ArchitecturePortfolio.js"
+import CVImages from "views/CV/CVImages.js"
 // import LoginPage from "views/LoginPage/LoginPage.js";
 
 function App(props) {
@@ -20,10 +21,7 @@ function App(props) {
         <Route path="/architecture" exact component={ArchitecturePortfolio} />
 
         <Route path="/" exact component={LandingPage} />
-
-        {/* <Route path="/login-page" component={LoginPage} /> */}
-        {/* <Route path="/components" component={Components} /> */}
-
+        <Route path="/cv-images" exact component={CVImages} />
 
       </Router>
       </div>
