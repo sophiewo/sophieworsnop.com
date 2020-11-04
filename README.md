@@ -9,11 +9,11 @@ I am also an avid knitter so I will be building features to aid with knitting pa
 
 I decided to use components of a Material-UI template from Creative Tim to get started with the front-end.
 
-# Tech 
+## Tech 
 
 This project is built using React via the `create-react-app`, bundled with `npm` and deployed through netlify with `npm build`
 
-## Current features:
+### Current features:
 - Landing Page with links to social platforms
 - Some examples of previous architecture work
 - Website structure diagrams
