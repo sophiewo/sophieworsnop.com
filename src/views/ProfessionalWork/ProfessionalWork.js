@@ -13,13 +13,14 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import Header from "components/Header/Header.js"
+import Footer from "components/Footer/Footer.js"
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js"
 import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
 import Primary from "components/Typography/Primary.js";
 
-
+import ProductSection from "../LandingPage/Sections/ProductSection";
 
 // import background from "assets/img/rca/SophieWorsnop_Plans.jpg";
 import classroom from "assets/img/drmm/edu_01_dRMM.jpg";
@@ -35,22 +36,15 @@ const useStyles = makeStyles(styles);
 
 const dashboardRoutes = [];
 
-export default function ArchitecturePortfolio(props) {
+export default function ProfessionalWork(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false
-  };
+
   return (
     <div>
       <Header
-        // color="transparent"
+        color="transparent"
         routes={dashboardRoutes}
         brand="sophieworsnop.com"
         rightLinks={<HeaderLinks />}
@@ -80,6 +74,14 @@ export default function ArchitecturePortfolio(props) {
           </GridContainer>
         </div>
       </Parallax>
+
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <ProductSection />
+        </div>
+      </div>
+      <Footer />
+
     </div>
   )
 };
