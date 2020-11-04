@@ -1,6 +1,9 @@
 import React from "react";
 
 import Carousel from "react-slick";
+
+import classNames from "classnames";
+
 // @material-ui/core components
 import { emphasize, makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -14,11 +17,12 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js"
 import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
+import Primary from "components/Typography/Primary.js";
 
 
 
 // import background from "assets/img/rca/SophieWorsnop_Plans.jpg";
-import clasroom from "assets/img/drmm/edu_01_dRMM.jpg";
+import classroom from "assets/img/drmm/edu_01_dRMM.jpg";
 import science from "assets/img/drmm/edu_02_dRMM.jpg";
 import cafe from "assets/img/drmm/edu_03_dRMM.jpg";
 import gym from "assets/img/drmm/edu_04_dRMM.jpg";
@@ -76,33 +80,6 @@ export default function ArchitecturePortfolio(props) {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classes.section}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={18} sm={20} md={30} className={classes.marginAuto}>
-              <Card carousel>
-                <Carousel {...settings}>
-
-                  <div>
-                    <img src={clasroom} alt="Second slide" className="slick-image" />
-                    <div className="slick-caption">
-                      <h4>
-                        School for the Deaf - Classroom Visualisation
-                      </h4>
-                    </div>
-                  </div>
-
-                    <div>
-                    <img src={science} alt="Science" className="slick-image" />
-                    <div className="slick-caption">
-                    </div>
-                  </div>
-                </Carousel>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
     </div>
-  );
-}
+  )
+};
