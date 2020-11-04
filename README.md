@@ -11,16 +11,16 @@ I decided to use components of a Material-UI template from Creative Tim to get s
 
 # Tech 
 
-This project is built using React via the `create-react-app`, bundled with `npm` and deployed through netflify and `npm build`
+This project is built using React via the `create-react-app`, bundled with `npm` and deployed through netlify with `npm build`
 
 ## Current features:
 - Landing Page with links to social platforms
+- Some examples of previous architecture work
 - Website structure diagrams
-- Some examples of previous work
 
 ### Next features to add:
-- knitting decrease calculator
-- knitting pattern designer
+- Knitting Decrease Calculator
+- Knitting Pattern Designer
 
 ## Licensing
 
