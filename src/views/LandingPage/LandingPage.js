@@ -49,7 +49,7 @@ export default function LandingPage(props) {
               <h2>
                 An architectural designer turned full-stack developer. I have a passion for sustainable design, whether it be a building or a piece of tech.
               </h2>
-              <br/>
+              <br />
               <h3> See behind the scenes of this React Website </h3>
               <Button
                 color="primary" round
@@ -57,8 +57,8 @@ export default function LandingPage(props) {
                 href="https://www.github.com/sophiewo"
                 target="_blank"
                 rel="noopener noreferrer"
-              > 
-              <i className={classes.socialIcons + " fab fa-github"} />
+              >
+                <i className={classes.socialIcons + " fab fa-github"} />
                  github
               </Button>
             </GridItem>
@@ -67,7 +67,7 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <WorkSection/>
+          <WorkSection />
         </div>
       </div>
       <Footer />
