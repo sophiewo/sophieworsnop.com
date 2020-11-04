@@ -35,7 +35,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="/architectural-portfolio"
+            href="/professional-portfolio"
             color="transparent"
             className={classes.navLink}> Architecture
           </Button>
@@ -53,9 +53,9 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
            
-             <Link to="/profile-page" className={classes.dropdownLink}>
+            <a href="https://www.instagram.com/sophieknits_/" className={classes.dropdownLink}>
               Gallery
-            </Link>,
+            </a>,
             <Link to="/knitting-tools" className={classes.dropdownLink}>
               Knitting Tools
             </Link>

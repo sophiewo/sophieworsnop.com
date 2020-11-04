@@ -15,7 +15,8 @@ import Parallax from "components/Parallax/Parallax.js"
 import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
 
-import EradeCarousel from "../LandingPage/Sections/EradeCarousel";
+import TitleProfessionalSection from "./TitleProfessionalSection.js";
+import EradeCarousel from "./EradeCarousel";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -64,21 +65,18 @@ export default function ProfessionalWork(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-      <div className={classes.section}>
-    
-        <GridContainer justify="center">
-          <GridItem cs={0} sm={15} md={10}>
+        <div className={classes.section}>
+          <GridContainer justify="center">
+            <GridItem cs={0} sm={15} md={10}>
               <Card>
-            <h2 className={classes.title}> School for Deaf Children | Exeter, UK </h2>
-            <EradeCarousel />
+                <TitleProfessionalSection/>
+                <EradeCarousel />
               </Card>
-          </GridItem>
-        </GridContainer>
-
+            </GridItem>
+          </GridContainer>
         </div>
+      </div>
       <Footer />
-    </div>
-    </div>
-
+    </div >
   )
 };

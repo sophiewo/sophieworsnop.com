@@ -11,20 +11,19 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/compl
 
 const useStyles = makeStyles(styles);
 
-export default function SectionCompletedExamples() {
+export default function TitleProfessionalSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2>Completed with examples</h2>
+          <h2>School for Deaf Children | Exeter, UK </h2>
             <h4>
-              The kit comes with three pre-built pages to help you get started
-              faster. You can change the text and images and you{"'"}re good to
-              go. More importantly, looking at them will give you a picture of
-              what you can build with this powerful kit.
+              These images were created for an consultation at the school. We presented the design to teachers, students and parents and the images were pivitol in explaining the design and materiality of the proposal.
             </h4>
+
+           Images created by Sophie while working at dRMM using: Rhino | Maxwell Render | Photoshop 
           </GridItem>
         </GridContainer>
       </div>

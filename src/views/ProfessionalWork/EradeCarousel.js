@@ -54,7 +54,7 @@ export default function EradeCarousel(props) {
                     <div className="slick-caption">
                       <Primary>
                         <h4>
-                          Visualisation: Rhino, Maxwell, Photoshop | Dining Room | © dRMM
+                          Dining Room | © dRMM
                         </h4>
                       </Primary>
                     </div>
@@ -64,7 +64,7 @@ export default function EradeCarousel(props) {
                     <div className="slick-caption">
                       <Primary>
                         <h4>
-                          Visualisation: Rhino, Maxwell, Photoshop | Sports Hall | © dRMM
+                          Sports Hall | © dRMM
                         </h4>
                       </Primary>
                     </div>
@@ -75,7 +75,7 @@ export default function EradeCarousel(props) {
                     <div className="slick-caption">
                       <Primary>
                         <h4>
-                          Visualisation: Rhino, Maxwell, Photoshop | Cafe | © dRMM
+                         Cafe | © dRMM
                         </h4>
                       </Primary>
                     </div>
@@ -86,7 +86,7 @@ export default function EradeCarousel(props) {
                     <div className="slick-caption">
                       <Primary>
                         <h4>
-                          Visualisation: Rhino, Maxwell, Photoshop | Science Classroom | © dRMM
+                          Science Classroom | © dRMM
                         </h4>
                       </Primary>
                     </div>
@@ -97,7 +97,7 @@ export default function EradeCarousel(props) {
                     <div className="slick-caption">
                       <Primary>
                         <h4>
-                          Visualisation: Rhino, Maxwell, Photoshop | Classroom | © dRMM
+                         Classroom | © dRMM
                         </h4>
                       </Primary>
                     </div>
