@@ -1,13 +1,9 @@
 import React from "react";
 
-import Carousel from "react-slick";
-
 import classNames from "classnames";
-
 // @material-ui/core components
-import { emphasize, makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+import { makeStyles } from "@material-ui/core/styles";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -18,17 +14,8 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js"
 import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
-import Primary from "components/Typography/Primary.js";
 
-import ProductSection from "../LandingPage/Sections/ProductSection";
-
-// import background from "assets/img/rca/SophieWorsnop_Plans.jpg";
-import classroom from "assets/img/drmm/edu_01_dRMM.jpg";
-import science from "assets/img/drmm/edu_02_dRMM.jpg";
-import cafe from "assets/img/drmm/edu_03_dRMM.jpg";
-import gym from "assets/img/drmm/edu_04_dRMM.jpg";
-import diningRoom from "assets/img/drmm/edu_05_dRMM.jpg";
-
+import EradeCarousel from "../LandingPage/Sections/EradeCarousel";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -55,6 +42,7 @@ export default function ProfessionalWork(props) {
         }}
         {...rest}
       />
+
       <Parallax filter image={require("assets/img/drmm/PosterOnWall01_cKKoren_dRMM.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -76,12 +64,21 @@ export default function ProfessionalWork(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <ProductSection />
-        </div>
-      </div>
-      <Footer />
+      <div className={classes.section}>
+    
+        <GridContainer justify="center">
+          <GridItem cs={0} sm={15} md={10}>
+              <Card>
+            <h2 className={classes.title}> School for Deaf Children | Exeter, UK </h2>
+            <EradeCarousel />
+              </Card>
+          </GridItem>
+        </GridContainer>
 
+        </div>
+      <Footer />
     </div>
+    </div>
+
   )
 };
