@@ -12,11 +12,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
-// import Header from "components/Header/Header.js"
-// import HeaderLinks from "components/Header/HeaderLinks.js";
-// import Parallax from "components/Parallax/Parallax.js"
-// import Small from "components/Typography/Small.js";
-// import Info from "components/Typography/Info.js";
 import Primary from "components/Typography/Primary.js";
 
 import classroom from "assets/img/drmm/edu_01_dRMM.jpg";
