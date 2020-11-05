@@ -13,7 +13,7 @@ function App(props) {
   return (
     <div>
       <Router history={hist}>
-        <Route path="/architecture" exact component={ArchitecturePortfolio} />
+        <Route path="/academic-portfolio" exact component={ArchitecturePortfolio} />
         <Route path="/professional-portfolio" exact component={ProfessionalWork} />
         <Route path="/" exact component={LandingPage} />
       </Router>

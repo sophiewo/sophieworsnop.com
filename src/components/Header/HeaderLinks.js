@@ -28,19 +28,26 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
 
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="architecture"
-          title="Architectural Portfolio"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="/professional-portfolio"
-            color="transparent"
-            className={classes.navLink}> Architecture
-          </Button>
-        </Tooltip>
-      </ListItem>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Architecture"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={Apps}
+          dropdownList={[
+            <Link
+                to="/academic-portfolio" className={classes.dropdownLink}>
+                Academic Work
+          </Link>,
+  
+            <Link
+              to="/professional-portfolio" className={classes.dropdownLink}>
+              Professional Work
+          </Link>
+          ]}/>
+        </ListItem>
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -57,18 +64,18 @@ export default function HeaderLinks(props) {
               Gallery
             </a>,
             <Link to="/knitting-tools" className={classes.dropdownLink}>
-              Knitting Tools
+              Knitting Tools (Coming Soon)
             </Link>
           ]}
           />
-           
+     
       </ListItem>
 
+
+
+
+
       <ListItem className={classes.listItem}>
-       
-      </ListItem>
-      <ListItem className={classes.listItem}>
-       
         <Tooltip
           id="instagram-twitter"
           title="Twitter"
@@ -85,6 +92,8 @@ export default function HeaderLinks(props) {
         </Tooltip>
       </ListItem>
 
+
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
@@ -100,6 +109,7 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
+
 
       <ListItem className={classes.listItem}>
         <Tooltip
