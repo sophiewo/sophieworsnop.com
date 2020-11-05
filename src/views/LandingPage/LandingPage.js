@@ -17,9 +17,6 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
-// Sections for this page
-import WorkSection from "./Sections/WorkSection"
-
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -61,13 +58,25 @@ export default function LandingPage(props) {
                 <i className={classes.socialIcons + " fab fa-github"} />
                  github
               </Button>
+
+
+              <Button
+                color="primary" round
+                size="lg"
+                href="mailto:sophie.g.worsnop@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className={classes.socialIcons + " fab fa-mail"} />
+                 Email me
+              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <WorkSection />
+       
         </div>
       </div>
       <Footer />
