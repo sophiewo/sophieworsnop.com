@@ -36,12 +36,10 @@ export default function Parallax(props) {
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
   const { className, children, style, image, small } = props;
-  // const { filter, className, children, style, image, small } = props;
 
   const classes = useStyles();
   const parallaxClasses = classNames({
     [classes.parallax]: true,
-    // [classes.filter]: filter,
     [classes.small]: small,
     [className]: className !== undefined
   });
@@ -61,7 +59,6 @@ export default function Parallax(props) {
 
 Parallax.propTypes = {
   className: PropTypes.string,
-  // filter: PropTypes.bool,
   children: PropTypes.node,
   style: PropTypes.string,
   image: PropTypes.string,
