@@ -45,7 +45,7 @@ export default function LandingPage(props) {
                 An architectural designer turned full-stack developer. I have a passion for sustainable design, whether it be a building or a piece of tech.
               </h2>
               <br />
-              <h3> See behind the scenes of this React Website </h3>
+              <h3> See behind the scenes of this React Website or say Hi </h3>
               <Button
                 color="primary" round
                 size="lg"
