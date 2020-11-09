@@ -18,11 +18,11 @@ export default function TitleProfessionalSection() {
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer justify="center">
-          {/* <GridItem xs={12} sm={12} md={8}> */}
+          <GridItem xs={12} sm={12} md={8}>
           <h2>Town Hall Annexe | London, UK </h2>
             <h4>
               A renovation and extension of a decommissioned Town Hall building. The project proposes 40 residential units. </h4>
-          {/* </GridItem> */}
+          </GridItem>
         </GridContainer>
       </div>
     </div>
