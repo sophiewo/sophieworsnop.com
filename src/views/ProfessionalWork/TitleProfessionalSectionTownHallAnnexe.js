@@ -21,7 +21,7 @@ export default function TitleProfessionalSection() {
           <GridItem xs={12} sm={12} md={8}>
           <h2>Town Hall Annexe | London, UK </h2>
             <h4>
-              A renovation and extension of a decommissioned Town Hall building. The project proposes 40 residential Units </h4>
+              A renovation and extension of a decommissioned Town Hall building. The project proposes 40 residential units. </h4>
           </GridItem>
         </GridContainer>
       </div>
