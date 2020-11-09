@@ -72,7 +72,7 @@ export default function HeaderLinks(props) {
 
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
+          id="twitter-twitter"
           title="Twitter"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}>
@@ -114,6 +114,22 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}>
             <i className={classes.socialIcons + " fab fa-linkedin"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="github-tooltip"
+          title="Github"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}>
+          <Button
+            color="transparent"
+            href="https://github.com/sophiewo"
+            target="_blank"
+            className={classes.navLink}>
+            <i className={classes.socialIcons + " fab fa-github"} />
           </Button>
         </Tooltip>
       </ListItem>
