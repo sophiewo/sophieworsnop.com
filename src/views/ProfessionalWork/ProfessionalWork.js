@@ -48,15 +48,9 @@ export default function ProfessionalWork(props) {
   return (
     <div>
       <Header
-        color="transparent"
         routes={dashboardRoutes}
-        brand="sophieworsnop.com"
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
         {...rest}
       />
 

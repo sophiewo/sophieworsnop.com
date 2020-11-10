@@ -1,7 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
+
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 
@@ -24,6 +23,7 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
+
   return (
     <List className={classes.list}>
 
@@ -38,16 +38,16 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link
-                to="/academic-portfolio" className={classes.dropdownLink}>
-                Academic Work
+              to="/academic-portfolio" className={classes.dropdownLink}>
+              Academic Work
           </Link>,
-  
+
             <Link
               to="/professional-portfolio" className={classes.dropdownLink}>
               Professional Work
           </Link>
-          ]}/>
-        </ListItem>
+          ]} />
+      </ListItem>
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -59,7 +59,7 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-           
+
             <a href="https://www.instagram.com/sophieknits_/" className={classes.dropdownLink}>
               Gallery
             </a>,
@@ -67,17 +67,12 @@ export default function HeaderLinks(props) {
               Knitting Tools (Coming Soon)
             </Link>
           ]}
-          />
-     
+        />
       </ListItem>
-
-
-
-
 
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
+          id="twitter-twitter"
           title="Twitter"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}>
@@ -85,14 +80,11 @@ export default function HeaderLinks(props) {
             href="https://https://twitter.com/sophiegw"
             target="_blank"
             color="transparent"
-            className={classes.navLink}
->
+            className={classes.navLink}>
             <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button> 
+          </Button>
         </Tooltip>
       </ListItem>
-
-
 
       <ListItem className={classes.listItem}>
         <Tooltip
@@ -110,7 +102,6 @@ export default function HeaderLinks(props) {
         </Tooltip>
       </ListItem>
 
-
       <ListItem className={classes.listItem}>
         <Tooltip
           id="linkedin-tooltip"
@@ -127,7 +118,21 @@ export default function HeaderLinks(props) {
         </Tooltip>
       </ListItem>
 
-
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="github-tooltip"
+          title="Github"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}>
+          <Button
+            color="transparent"
+            href="https://github.com/sophiewo"
+            target="_blank"
+            className={classes.navLink}>
+            <i className={classes.socialIcons + " fab fa-github"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
     </List>
   );
 }

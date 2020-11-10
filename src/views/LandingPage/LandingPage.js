@@ -26,9 +26,8 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="transparent"
+        color="white"
         routes={dashboardRoutes}
-        brand="sophieworsnop.com"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -37,7 +36,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/landpage-sophieknits.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -46,7 +45,7 @@ export default function LandingPage(props) {
                 An architectural designer turned full-stack developer. I have a passion for sustainable design, whether it be a building or a piece of tech.
               </h2>
               <br />
-              <h3> See behind the scenes of this React Website </h3>
+              <h3> See behind the scenes of this React Website or say Hi </h3>
               <Button
                 color="primary" round
                 size="lg"
