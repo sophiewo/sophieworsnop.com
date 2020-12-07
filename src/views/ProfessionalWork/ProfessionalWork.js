@@ -4,7 +4,6 @@ import classNames from "classnames";
 
 import Carousel from "react-slick";
 
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
@@ -19,7 +18,7 @@ import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
 import Primary from "components/Typography/Primary.js";
 
-import TitleProfessionalSectionErade from "./TitleProfessionalSectionErade.js";
+import WorkProjectHeading from "../../components/WorkProjectHeading/WorkProjectHeading.js";
 import TitleProfessionalSectionTownHallAnnexe from "./TitleProfessionalSectionTownHallAnnexe.js";
 import EradeCarousel from "./EradeCarousel";
 
@@ -80,7 +79,10 @@ export default function ProfessionalWork(props) {
             <GridItem cs={0} sm={15} md={10}>
 
               <Card>
-                <TitleProfessionalSectionErade />
+                <WorkProjectHeading
+                  title="School for Deaf Children | Exeter, UK"
+                  blurb="These images were created for an consultation at the school. We presented the design to teachers, students and parents and the images were pivitol in explaining the design and materiality of the proposal."
+                  credit="Images created by Sophie while working at dRMM using: Rhino | Maxwell Render | Photoshop " />
                 <EradeCarousel />
 
                 <TitleProfessionalSectionTownHallAnnexe />
