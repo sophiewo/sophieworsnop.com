@@ -19,7 +19,6 @@ import Info from "components/Typography/Info.js";
 import Primary from "components/Typography/Primary.js";
 
 import WorkProjectHeading from "../../components/WorkProjectHeading/WorkProjectHeading.js";
-import TitleProfessionalSectionTownHallAnnexe from "./TitleProfessionalSectionTownHallAnnexe.js";
 import EradeCarousel from "./EradeCarousel";
 
 import townHallAnnexe from "assets/img/drmm/170222_DidsburyCentre.jpg"
@@ -85,8 +84,13 @@ export default function ProfessionalWork(props) {
                   credit="Images created by Sophie while working at dRMM using: Rhino | Maxwell Render | Photoshop " />
                 <EradeCarousel />
 
-                <TitleProfessionalSectionTownHallAnnexe />
-                <div>
+
+                <WorkProjectHeading
+                  title="Town Hall Annexe | London, UK"
+                  blurb="A renovation and extension of a decommissioned Town Hall building. The project proposes 40 residential units."
+                  credit="Images worked on by Sophie while working at dRMM using: Rhino | Revit | Photoshop " />
+
+                  <div>
                   <div className={classes.section}>
                     <div className={classes.container}>
                       <GridContainer>
@@ -94,13 +98,14 @@ export default function ProfessionalWork(props) {
                           <Card carousel>
                             <Carousel {...settings}>
                               <div>
-                                <img src={townHallAnnexe} alt="Second slide" className="slick-image" />
+                                <img src={townHallAnnexe} alt="townHallAnnex" className="slick-image" />
                                 <div className="slick-caption">
                                   <Primary>
                                     <h4> Town Hall Annexe | © dRMM </h4>
                                   </Primary>
                                 </div>
                               </div>
+                              
                             </Carousel>
                           </Card>
                         </GridItem>
