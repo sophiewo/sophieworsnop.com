@@ -2,13 +2,9 @@ import React from "react";
 
 import Carousel from "react-slick";
 
-// import classNames from "classnames";
-
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-// import LocationOn from "@material-ui/icons/LocationOn";
-// core components
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
@@ -45,7 +41,7 @@ export default function EradeCarousel(props) {
               <Card carousel>
                 <Carousel {...settings}>
                   <div>
-                    <img src={diningRoom} alt="Second slide" className="slick-image" />
+                    <img src={diningRoom} alt="diningRoom"/>
                     <div className="slick-caption">
                       <Primary>
                         <h4>
@@ -55,7 +51,7 @@ export default function EradeCarousel(props) {
                     </div>
                   </div>
                   <div>
-                    <img src={gym} alt="Second slide" className="slick-image" />
+                    <img src={gym} alt="Gym" className="slick-image" />
                     <div className="slick-caption">
                       <Primary>
                         <h4>
@@ -77,7 +73,7 @@ export default function EradeCarousel(props) {
                   </div>
 
                   <div>
-                    <img src={science} alt="Second slide" className="slick-image" />
+                    <img src={science} alt="science" />
                     <div className="slick-caption">
                       <Primary>
                         <h4>
@@ -88,7 +84,7 @@ export default function EradeCarousel(props) {
                   </div>
 
                   <div>
-                    <img src={classroom} alt="Second slide" className="slick-image" />
+                    <img src={classroom} alt="classroom" />
                     <div className="slick-caption">
                       <Primary>
                         <h4>
