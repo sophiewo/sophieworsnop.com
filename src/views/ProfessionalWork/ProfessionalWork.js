@@ -90,7 +90,7 @@ export default function ProfessionalWork(props) {
                   blurb="A renovation and extension of a decommissioned Town Hall building. The project proposes 40 residential units."
                   credit="Images worked on by Sophie while working at dRMM using: Rhino | Revit | Photoshop " />
 
-                  <div>
+                <div>
                   <div className={classes.section}>
                     <div className={classes.container}>
                       <GridContainer>
@@ -105,7 +105,7 @@ export default function ProfessionalWork(props) {
                                   </Primary>
                                 </div>
                               </div>
-                              
+
                             </Carousel>
                           </Card>
                         </GridItem>
@@ -113,7 +113,7 @@ export default function ProfessionalWork(props) {
                     </div>
                   </div>
                 </div>
-                
+
               </Card>
             </GridItem>
           </GridContainer>
