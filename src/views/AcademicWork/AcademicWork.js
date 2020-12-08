@@ -21,13 +21,12 @@ import section from "assets/img/rca/SophieWorsnop_Section.jpg";
 
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
-// import { InfoOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
 const dashboardRoutes = [];
 
-export default function ArchitecturePortfolio(props) {
+export default function AcademicWork(props) {
   const classes = useStyles();
   const { ...rest } = props;
 

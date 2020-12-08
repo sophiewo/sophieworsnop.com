@@ -4,7 +4,6 @@ import classNames from "classnames";
 
 import Carousel from "react-slick";
 
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
@@ -19,8 +18,7 @@ import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
 import Primary from "components/Typography/Primary.js";
 
-import TitleProfessionalSectionErade from "./TitleProfessionalSectionErade.js";
-import TitleProfessionalSectionTownHallAnnexe from "./TitleProfessionalSectionTownHallAnnexe.js";
+import WorkProjectHeading from "../../components/WorkProjectHeading/WorkProjectHeading.js";
 import EradeCarousel from "./EradeCarousel";
 
 import townHallAnnexe from "assets/img/drmm/170222_DidsburyCentre.jpg"
@@ -80,10 +78,18 @@ export default function ProfessionalWork(props) {
             <GridItem cs={0} sm={15} md={10}>
 
               <Card>
-                <TitleProfessionalSectionErade />
+                <WorkProjectHeading
+                  title="School for Deaf Children | Exeter, UK"
+                  blurb="These images were created for an consultation at the school. We presented the design to teachers, students and parents and the images were pivitol in explaining the design and materiality of the proposal."
+                  credit="Images created by Sophie while working at dRMM using: Rhino | Maxwell Render | Photoshop " />
                 <EradeCarousel />
 
-                <TitleProfessionalSectionTownHallAnnexe />
+
+                <WorkProjectHeading
+                  title="Town Hall Annexe | London, UK"
+                  blurb="A renovation and extension of a decommissioned Town Hall building. The project proposes 40 residential units."
+                  credit="Images worked on by Sophie while working at dRMM using: Rhino | Revit | Photoshop " />
+
                 <div>
                   <div className={classes.section}>
                     <div className={classes.container}>
@@ -92,13 +98,14 @@ export default function ProfessionalWork(props) {
                           <Card carousel>
                             <Carousel {...settings}>
                               <div>
-                                <img src={townHallAnnexe} alt="Second slide" className="slick-image" />
+                                <img src={townHallAnnexe} alt="townHallAnnex" className="slick-image" />
                                 <div className="slick-caption">
                                   <Primary>
                                     <h4> Town Hall Annexe | © dRMM </h4>
                                   </Primary>
                                 </div>
                               </div>
+
                             </Carousel>
                           </Card>
                         </GridItem>
@@ -106,7 +113,7 @@ export default function ProfessionalWork(props) {
                     </div>
                   </div>
                 </div>
-                
+
               </Card>
             </GridItem>
           </GridContainer>

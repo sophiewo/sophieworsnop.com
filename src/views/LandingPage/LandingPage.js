@@ -1,11 +1,7 @@
 import React from "react";
 
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-
-// core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -26,20 +22,15 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="white"
         routes={dashboardRoutes}
         rightLinks={<HeaderLinks />}
         fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
         {...rest}
       />
       <Parallax image={require("assets/img/landpage-sophieknits_sm.jpg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
+            <GridItem >
               <h1 className={classes.title}>Hi, I'm Sophie. </h1>
               <h2>
                 An architectural designer turned full-stack developer. I have a passion for sustainable design, whether it be a building or a piece of tech.
@@ -51,8 +42,7 @@ export default function LandingPage(props) {
                 size="lg"
                 href="https://www.github.com/sophiewo"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <i className={classes.socialIcons + " fab fa-github"} />
                  github
               </Button>
@@ -63,8 +53,7 @@ export default function LandingPage(props) {
                 size="lg"
                 href="mailto:sophie.g.worsnop@gmail.com"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <i className={classes.socialIcons + " fab fa-mail"} />
                  Email me
               </Button>

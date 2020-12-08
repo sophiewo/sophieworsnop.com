@@ -1,13 +1,11 @@
 
 # sophieworsnop.com
 
-Visit the deployed website [here](https://sophieworsnop.netlify.app/)
+Visit the deployed website [here](https://sophieworsnop.com)
 
 This website was built to showcase what I'm all about as a full stack software / web developer and host my work from the last 10 years as an architectural designer.
 
-I am also an avid knitter so I will be building features to aid with knitting pattern design.
-
-I decided to use components of a Material-UI template from Creative Tim to get started with the front-end.
+I decided to use components of a Material-UI template from Creative Tim to get started with the UI.
 
 ## Tech 
 
@@ -17,10 +15,6 @@ This project is built using React via the `create-react-app`, bundled with `npm`
 - Landing Page with links to social platforms
 - Some examples of previous architecture work
 - Website structure diagrams
-
-### Next features to add:
-- Knitting Decrease Calculator
-- Knitting Pattern Designer
 
 ## Licensing
 
