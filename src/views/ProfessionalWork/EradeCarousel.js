@@ -73,7 +73,7 @@ export default function EradeCarousel(props) {
                   </div>
 
                   <div>
-                    <img src={science} alt="science" />
+                    <img src={science} alt="science" className="slick-image" />
                     <div className="slick-caption">
                       <Primary>
                         <h4>
