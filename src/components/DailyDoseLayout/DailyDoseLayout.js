@@ -1,40 +1,54 @@
-import * as React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { Component } from 'react';
+
 import Grid from '@material-ui/core/Grid';
 
-// import tile1 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_06.jpg';
-import DailyDoseImgList from './DailyDoseImageList';
+import info1 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_04.jpg';
+import info2 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_05.jpg';
+import timeline1 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_06.jpg';
+import timeline2 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_07.jpg';
+import timeline3 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_08.jpg';
+import timeline4 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_09.jpg';
+import timeline5 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_10.jpg';
+import timeline6 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_11.jpg';
+import timeline7 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_12.jpg';
+import timeline8 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_13.jpg';
+import timeline9 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_14.jpg';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
+class ImageList extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      picList: [
+        info1, info2, timeline1,
+        timeline2, timeline3, timeline4, timeline5,
+        timeline6, timeline7, timeline8, timeline9
+      ]
+    }
   }
 
-}));
+  render() {
 
-export default function DailyDoseLayout(props) {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <Grid container xs={12} spacing={1}>
-        <Grid item xs={3} >
-          <DailyDoseImgList/>
+    const images = this.state.picList.map((image) => {
+      return (
+        <Grid item xs={6} >
+          <img src={image} alt="" width="100%" />
         </Grid>
+      )
 
-        <Grid item xs={3} >
-          {/* <img src={tile1} alt="test" width="100%" /> */}
+      
+    })
+
+    return (
+      <div>
+        <Grid container xs={12} spacing={3}>
+            {images}
         </Grid>
-
-        <Grid item xs={3} >
-          {/* <img src={tile1} alt="test" width="100%" /> */}
-        </Grid>
-
-        <Grid item xs={3} >
-          {/* <img src={tile1} alt="test" width="100%" /> */}
-        </Grid>
-
-      </Grid>
-    </div>
-  );
+      </div>
+    )
+  }
 }
+
+
+
+export default ImageList;
