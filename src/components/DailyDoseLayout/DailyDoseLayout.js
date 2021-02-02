@@ -19,30 +19,37 @@ class ImageList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      picList: [
-        info1, info2, timeline1,
-        timeline2, timeline3, timeline4, timeline5,
-        timeline6, timeline7, timeline8, timeline9
+      info: [info1, info2],
+      timeline: [
+        timeline1, timeline2, timeline3, timeline4,
+        timeline5, timeline6, timeline7, timeline8, timeline9
       ]
     }
   }
 
   render() {
 
-    const images = this.state.picList.map((image) => {
+    const infoImages = this.state.info.map((image) => {
       return (
         <Grid item xs={6} >
           <img src={image} alt="" width="100%" />
         </Grid>
       )
+    })
 
-      
+    const timelineImages = this.state.timeline.map((image) => {
+      return (
+        <Grid item xs={4} >
+          <img src={image} alt="timeline" width="100%" />
+        </Grid>
+      )
     })
 
     return (
       <div>
         <Grid container xs={12} spacing={3}>
-            {images}
+          {infoImages}
+          {timelineImages}
         </Grid>
       </div>
     )
