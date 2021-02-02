@@ -21,6 +21,7 @@ import section from "assets/img/rca/SophieWorsnop_Section.jpg";
 
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
+import DailyDoseLayout from "components/DailyDoseLayout/DailyDoseLayout";
 
 const useStyles = makeStyles(styles);
 
@@ -81,6 +82,7 @@ export default function AcademicWork(props) {
       <div className={classes.section}>
         <div className={classes.container}>
           <GridContainer>
+            <DailyDoseLayout />
             <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
               <Card carousel>
                 <Carousel {...settings}>
