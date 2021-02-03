@@ -21,12 +21,7 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
-        routes={dashboardRoutes}
-        rightLinks={<HeaderLinks />}
-        fixed
-        {...rest}
-      />
+      <Header fixed />
       <Parallax image={require("assets/img/landpage-sophieknits_sm.jpg")}>
         <div className={classes.container}>
           <GridContainer>

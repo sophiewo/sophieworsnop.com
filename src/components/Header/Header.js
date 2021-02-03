@@ -39,7 +39,7 @@ export default function Header(props) {
   const brandComponent = 
     <Button href="/" className={classes.title}>sophieworsnop.com</Button>;
   return (
-    <AppBar className={appBarClasses} fixed>
+    <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>

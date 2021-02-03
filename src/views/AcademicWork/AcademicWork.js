@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Header from "components/Header/Header.js"
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js"
 import Small from "components/Typography/Small.js";
 import Primary from "components/Typography/Primary.js";
@@ -15,9 +14,8 @@ import DailyDoseLayout from "components/DailyDoseLayout/DailyDoseLayout";
 
 const useStyles = makeStyles(styles);
 
-export default function AcademicWork(props) {
+export default function AcademicWork() {
   const classes = useStyles();
-  // const { ...rest } = props;
 
   return (
     <div>
