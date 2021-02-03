@@ -12,7 +12,6 @@ import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import Header from "components/Header/Header.js"
 import Footer from "components/Footer/Footer.js"
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js"
 import Small from "components/Typography/Small.js";
 import Info from "components/Typography/Info.js";
@@ -27,11 +26,8 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/carou
 
 const useStyles = makeStyles(styles);
 
-const dashboardRoutes = [];
-
 export default function ProfessionalWork(props) {
   const classes = useStyles();
-  const { ...rest } = props;
 
   const settings = {
     dots: true,
@@ -41,17 +37,10 @@ export default function ProfessionalWork(props) {
     slidesToScroll: 1,
     autoplay: false
   };
-
-
+  
   return (
     <div>
-      <Header
-        routes={dashboardRoutes}
-        rightLinks={<HeaderLinks />}
-        fixed
-        {...rest}
-      />
-
+      <Header fixed/>
       <Parallax filter image={require("assets/img/drmm/PosterOnWall01_cKKoren_dRMM.jpg")}>
         <div className={classes.container}>
           <GridContainer>

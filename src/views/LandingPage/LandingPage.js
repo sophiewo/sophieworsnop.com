@@ -7,12 +7,9 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
-
-const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
@@ -21,12 +18,7 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
-        routes={dashboardRoutes}
-        rightLinks={<HeaderLinks />}
-        fixed
-        {...rest}
-      />
+      <Header fixed />
       <Parallax image={require("assets/img/landpage-sophieknits_sm.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -46,7 +38,6 @@ export default function LandingPage(props) {
                 <i className={classes.socialIcons + " fab fa-github"} />
                  github
               </Button>
-
 
               <Button
                 color="primary" round
