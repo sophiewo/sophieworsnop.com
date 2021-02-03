@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 
 import Grid from '@material-ui/core/Grid';
 
-import info1 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_04.jpg';
-import info2 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_05.jpg';
-import timeline1 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_06.jpg';
-import timeline2 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_07.jpg';
-import timeline3 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_08.jpg';
-import timeline4 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_09.jpg';
-import timeline5 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_10.jpg';
-import timeline6 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_11.jpg';
-import timeline7 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_12.jpg';
-import timeline8 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_13.jpg';
-import timeline9 from '../../assets/img/dailydose/DailyDose_SophieWorsnop_Page_14.jpg';
+import info1 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_04.png';
+import info2 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_05.png';
+import timeline1 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_06.png';
+import timeline2 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_07.png';
+import timeline3 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_08.png';
+import timeline4 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_09.png';
+import timeline5 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_10.png';
+import timeline6 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_11.png';
+import timeline7 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_12.png';
+import timeline8 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_13.png';
+import timeline9 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_14.png';
 
 class ImageList extends Component {
 
@@ -55,7 +55,5 @@ class ImageList extends Component {
     )
   }
 }
-
-
 
 export default ImageList;
