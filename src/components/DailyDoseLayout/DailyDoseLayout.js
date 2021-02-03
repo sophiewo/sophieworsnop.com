@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 
 import info1 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_04.png';
-import info2 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_05.png';
+import info2 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_29.png';
+import info3 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_30.png';
 import timeline1 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_06.png';
 import timeline2 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_07.png';
 import timeline3 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_08.png';
@@ -14,12 +15,21 @@ import timeline7 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_12.png'
 import timeline8 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_13.png';
 import timeline9 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_14.png';
 
+import article from '../../assets/img/rca/SophieWorsnop_Article.jpg'
+
+import plan01 from '../../assets/img/rca/INSTA_SOPHIEWORSNOP_5.jpg'
+import plan02 from '../../assets/img/rca/INSTA_SOPHIEWORSNOP_6.jpg'
+import plan03  from '../../assets/img/rca/INSTA_SOPHIEWORSNOP_7.jpg'
+
+import perspective from '../../assets/img/rca/SophieWorsnop_02.jpg'
+
+
 class ImageList extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      info: [info1, info2],
+      info: [info1, info2, info3],
       timeline: [
         timeline1, timeline2, timeline3, timeline4,
         timeline5, timeline6, timeline7, timeline8, timeline9
@@ -32,7 +42,7 @@ class ImageList extends Component {
 
     const infoImages = this.state.info.map((image) => {
       return (
-        <Grid item xs={6} >
+        <Grid item xs={4} >
           <img src={image} alt="" width="100%" />
         </Grid>
       )
@@ -46,10 +56,26 @@ class ImageList extends Component {
       )
     })
 
+    const planImg = [plan01, plan02, plan03]
+    const plans = planImg.map((image) => {
+      return (
+        <Grid item xs={6} >
+          <img src={image} alt="plans" width="100%" />
+        </Grid>
+      )
+    })
+
     return (
       <div>
         <Grid container xs={12} spacing={3}>
+          <Grid item xs={12} >
+            <img src={article} alt="article" width="100%" />
+          </Grid>
           {infoImages}
+          {plans}
+          <Grid item xs={12} >
+            <img src={perspective} alt="article" width="100%" />
+          </Grid>
           {timelineImages}
         </Grid>
       </div>
