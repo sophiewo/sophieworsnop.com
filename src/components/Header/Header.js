@@ -13,9 +13,8 @@ import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 
-// @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
-// core components
+
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -28,7 +27,7 @@ export default function Header(props) {
     setMobileOpen(!mobileOpen);
   };
 
-  const { color, rightLinks, leftLinks, fixed, absolute } = props;
+  const { color, leftLinks, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: "white",
