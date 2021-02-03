@@ -11,6 +11,8 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+import HeaderLinks from "components/Header/HeaderLinks.js";
+
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
@@ -29,14 +31,15 @@ export default function Header(props) {
   const { color, rightLinks, leftLinks, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
-    [classes[color]]: color,
+    [classes[color]]: "white",
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
+
   const brandComponent = 
     <Button href="/" className={classes.title}>sophieworsnop.com</Button>;
   return (
-    <AppBar className={appBarClasses}>
+    <AppBar className={appBarClasses} fixed>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
@@ -49,7 +52,7 @@ export default function Header(props) {
           )}
         </div>
         <Hidden smDown implementation="css">
-          {rightLinks}
+          {<HeaderLinks />}
         </Hidden>
         <Hidden mdUp>
           <IconButton
@@ -73,7 +76,7 @@ export default function Header(props) {
         >
           <div className={classes.appResponsive}>
             {leftLinks}
-            {rightLinks}
+            {<HeaderLinks />}
           </div>
         </Drawer>
       </Hidden>

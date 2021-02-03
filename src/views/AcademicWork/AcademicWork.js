@@ -15,26 +15,13 @@ import DailyDoseLayout from "components/DailyDoseLayout/DailyDoseLayout";
 
 const useStyles = makeStyles(styles);
 
-const dashboardRoutes = [];
-
 export default function AcademicWork(props) {
   const classes = useStyles();
-  const { ...rest } = props;
+  // const { ...rest } = props;
 
   return (
     <div>
-      <Header
-        color="white"
-        routes={dashboardRoutes}
-        brand="sophieworsnop.com"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      />
+      <Header fixed />
       <Parallax filter image={require("assets/img/rca/SophieWorsnop_Plan_bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
