@@ -14,7 +14,6 @@ This project is built using React via the `create-react-app`, bundled with `npm`
 ### Current features:
 - Landing Page with links to social platforms
 - Some examples of previous architecture work
-- Website structure diagrams
 
 ## Licensing
 
