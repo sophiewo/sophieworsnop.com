@@ -15,7 +15,6 @@ const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
   const classes = useStyles();
-  const { ...rest } = props;
   return (
     <div>
       <Header fixed />
