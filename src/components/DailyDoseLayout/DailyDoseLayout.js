@@ -82,7 +82,7 @@ class ImageList extends Component {
           </Grid>
           {infoImages}
           {plans}
-          <Grid item xs={6} alignItems="center"  >
+          <Grid item xs={12} alignItems="center"  >
             <img src={axo} alt="axo" width="100%" />
           </Grid>
           <Grid item xs={12} >

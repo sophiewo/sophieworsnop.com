@@ -23,7 +23,7 @@ return (
 
           <h3 className={classes.info}>
           Psychiatry has followed the sine wave of development throughout modern 
-          story. With every new ‘breakthrough’ has come a significant low or lull in treatment progression. 
+          history. With every new ‘breakthrough’ has come a significant low or lull in treatment progression. 
           The changing tide towards true parity of esteem through recent policy speeches and campaigns by prominent 
           individuals is a positive advancement and Daily Dose aims to seize on this new upward wave by proposing the
           next leap forward in treatment for mental health.  

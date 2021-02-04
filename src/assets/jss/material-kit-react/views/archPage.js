@@ -61,6 +61,7 @@ const archStyle = {
 
   info: {
     fontSize: "95%",
+    fontWeight: "bold",
     textAlign: "justify", 
     marginTop: "5px",
     minHeight: "32px",
