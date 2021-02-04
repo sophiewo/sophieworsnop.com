@@ -30,6 +30,7 @@ import section from '../../assets/img/rca/SophieWorsnop_02.png'
 
 import map from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_36.png'
 
+import axo from '../../assets/img/rca/DailyDose_ExplodedAxo.png'
 
 
 class ImageList extends Component {
@@ -81,6 +82,9 @@ class ImageList extends Component {
           </Grid>
           {infoImages}
           {plans}
+          <Grid item xs={6} alignItems="center"  >
+            <img src={axo} alt="axo" width="100%" />
+          </Grid>
           <Grid item xs={12} >
             <img src={section} alt="section" width="100%" />
           </Grid>

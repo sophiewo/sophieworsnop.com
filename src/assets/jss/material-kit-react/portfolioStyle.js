@@ -38,7 +38,7 @@ const portfolioStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
+    marginTop: "100px",
     minHeight: "32px",
     textDecoration: "none"
   },
