@@ -17,11 +17,19 @@ import timeline9 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_14.png'
 
 import article from '../../assets/img/rca/SophieWorsnop_Article.jpg'
 
-import plan01 from '../../assets/img/rca/INSTA_SOPHIEWORSNOP_5.jpg'
-import plan02 from '../../assets/img/rca/INSTA_SOPHIEWORSNOP_6.jpg'
-import plan03  from '../../assets/img/rca/INSTA_SOPHIEWORSNOP_7.jpg'
+import plan00 from '../../assets/img/rca/DailyDose__Page_1.png'
+import plan01 from '../../assets/img/rca/DailyDose__Page_2.png'
+import plan02 from '../../assets/img/rca/DailyDose__Page_3.png'
+import plan03 from '../../assets/img/rca/DailyDose__Page_4.png'
+import plan04 from '../../assets/img/rca/DailyDose__Page_5.png'
+import plan05 from '../../assets/img/rca/DailyDose__Page_6.png'
+import plan06 from '../../assets/img/rca/DailyDose__Page_7.png'
+import plan07 from '../../assets/img/rca/DailyDose__Page_8.png'
 
-import perspective from '../../assets/img/rca/SophieWorsnop_02.jpg'
+import section from '../../assets/img/rca/SophieWorsnop_02.png'
+
+import map from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_36.png'
+
 
 
 class ImageList extends Component {
@@ -56,7 +64,7 @@ class ImageList extends Component {
       )
     })
 
-    const planImg = [plan01, plan02, plan03]
+    const planImg = [plan00, plan01, plan02, plan03, plan04, plan05, plan06, plan07]
     const plans = planImg.map((image) => {
       return (
         <Grid item xs={6} >
@@ -74,9 +82,12 @@ class ImageList extends Component {
           {infoImages}
           {plans}
           <Grid item xs={12} >
-            <img src={perspective} alt="article" width="100%" />
+            <img src={section} alt="section" width="100%" />
           </Grid>
           {timelineImages}
+          <Grid item xs={12} >
+            <img src={map} alt="map" width="100%" />
+          </Grid>
         </Grid>
       </div>
     )
