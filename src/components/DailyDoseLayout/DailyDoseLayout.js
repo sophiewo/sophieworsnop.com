@@ -15,7 +15,7 @@ import timeline7 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_12.png'
 import timeline8 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_13.png';
 import timeline9 from '../../assets/img/rca/DailyDose_SophieWorsnop_Page_14.png';
 
-import article from '../../assets/img/rca/SophieWorsnop_Article.jpg'
+import article from '../../assets/img/rca/SophieWorsnop_Article.png'
 
 import plan00 from '../../assets/img/rca/DailyDose__Page_1.png'
 import plan01 from '../../assets/img/rca/DailyDose__Page_2.png'
