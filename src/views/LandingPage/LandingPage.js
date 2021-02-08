@@ -37,7 +37,6 @@ export default function LandingPage(props) {
                 <i className={classes.socialIcons + " fab fa-github"} />
                  github
               </Button>
-
               <Button
                 color="primary" round
                 size="lg"
